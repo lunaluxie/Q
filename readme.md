@@ -48,7 +48,7 @@ qb = Qubit()
 
 qb.set_state(1,0)
 
-# you can also let Q figure out the other coeffecient
+# you can also let Q figure out the other coefficient
 qb.set_state(beta=0.3)
 ```
 
