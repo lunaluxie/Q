@@ -18,7 +18,7 @@ qb.apply_gate(not_gate)
 print (qb.measure_state())
 # out: 1
 ```
-Because the initial state had the alpha coefficient equal to one 1, the measure state will with 100% certainty return 1 since now the beta coefficient is equal to 1.
+Because the initial state had the alpha coefficient equal to one 1, the measure state will with 100% certainty return 1.
 
 Measure state simulates a physical measurement. It returns 0 with alpha squared probability, and 1 with beta squared probability.
 ```Python
