@@ -1,7 +1,16 @@
 # Q
 > A quantum computing simulation library written in Python
 
-With Q you can simulate quantum computing systems on a classical computer. 
+With Q you can simulate quantum computing systems on a classical computer.
+
+## Installation
+```
+git clone https://github.com/Kasperfred/Q.git
+
+cd Q
+
+pip install .
+``` 
 
 ## Usage
 Basic example creating a qubit and applying a not-gate:

@@ -6,3 +6,6 @@ def hadamard_gate():
 
 def not_gate():
 	return np.array([[0,1],[1,0]])
+
+def identity_gate():
+	return np.array([[1,0],[0,1]])

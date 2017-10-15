@@ -22,7 +22,7 @@ class Qubit:
 		else:
 			return False
 
-	def set_state(self, alpha, beta):
+	def set_state(self, alpha=None, beta=None):
 		if alpha == None and beta == None:
 			self.alpha = alpha
 			self.beta = beta
