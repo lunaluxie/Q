@@ -12,6 +12,17 @@ class Qubit:
 		return "QuBit: {}|0> {}|1>".format(self.alpha, self.beta)
 
 	def _is_unitary(self, m):
+		"""Check if matrix is unitary
+
+		Checks if the conjugate transpose is also the inverse
+		
+		Args:
+			m (array): The matrix which is checked
+		
+		Returns:
+			bool: Whether the matrix is unitary
+		"""
+
 		import numpy as np
 		m = np.matrix(m)
 		return np.allclose(np.eye(m.shape[0]), m.H * m)
@@ -23,6 +34,14 @@ class Qubit:
 			return False
 
 	def set_state(self, alpha=None, beta=None):
+		"""Set the state of the Qubit
+			alpha (complex, optional): Defaults to None. Set the alpha coefficient
+			beta (complex, optional): Defaults to None. Set the beta coefficient
+		
+		Raises:
+			ValueError: Magnitude of a Qubit must be equal to 1
+		"""
+
 		if alpha == None and beta == None:
 			self.alpha = alpha
 			self.beta = beta
