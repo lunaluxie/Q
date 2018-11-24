@@ -1,3 +1,4 @@
+from numpy.random import choice
 class Qubit:
 	"""
 	A simulated qubit. 
@@ -75,8 +76,6 @@ class Qubit:
 		"""
 		if self.alpha == None or self.beta == None:
 			raise ValueError("State must be set before measured")
-
-		from numpy.random import choice
 
 		alpha_prob = self.alpha**2
 		beta_prob = self.beta**2
